@@ -1,0 +1,74 @@
+GolfBioMetrics Production Features
+================================================================================
+
+Total Features: 58
+
+BIOMECHANICS:
+  - club_path_confidence
+  - club_path_consistency
+  - compensation_severity
+  - early_cast_flag
+  - early_extension_flag
+  - kinematic_sequence_confidence
+  - kinematic_sequence_score
+  - lag_angle_impact
+  - lag_angle_mid_downswing
+  - lag_confidence
+  - links_course_flag
+  - over_top_flag
+  - release_efficiency
+  - reverse_pivot_flag
+  - sway_flag
+  - swing_tempo_ratio
+  - tempo_confidence
+  - tempo_sequence_alignment
+  - weight_transfer_confidence
+  - weight_transfer_timing_ms
+  - weighted_quality_score
+  - xfactor_confidence
+  - xfactor_degrees
+  - xfactor_max_ts
+  - xfactor_rate_of_change
+  - xfactor_timing
+
+DEMOGRAPHICS (10):
+  - age_capability_factor
+  - career_stage
+  - dominant_hand_encoded
+  - experience_engrainment
+  - fitness_capability
+  - fitness_level
+  - gender_encoded
+  - height_m
+  - physical_profile_score
+  - years_experience
+
+ENVIRONMENTAL (17):
+  - circadian_factor
+  - course_type_encoded
+  - elevation_m
+  - env_difficulty_index
+  - hour_of_day
+  - humidity_pct
+  - links_course_flag
+  - normalized_distance_factor
+  - swing_tempo_ratio
+  - temperature_c
+  - temperature_efficiency
+  - tempo_confidence
+  - tempo_sequence_alignment
+  - wind_crosswind_component
+  - wind_direction_deg
+  - wind_headwind_component
+  - wind_speed_mph
+
+OTHER (9):
+  - club_speed_at_impact
+  - green_speed_stimp
+  - seq_consistency
+  - seq_trend
+  - session_fatigue
+  - speed_trend
+  - speed_variance_recent
+  - swing_dominant_frequency
+  - time_to_peak_speed

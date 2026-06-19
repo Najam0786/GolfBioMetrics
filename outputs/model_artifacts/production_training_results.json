@@ -1,0 +1,136 @@
+{
+  "training_date": "2026-06-17T20:46:07.931904",
+  "dataset": "feature_matrix_production.csv",
+  "data_quality": {
+    "nan": 0,
+    "inf": 0,
+    "dup": 0
+  },
+  "features": {
+    "total": 58,
+    "biomechanics": 25,
+    "demographics": 10,
+    "environmental": 15,
+    "list": [
+      "age_capability_factor",
+      "career_stage",
+      "circadian_factor",
+      "club_path_confidence",
+      "club_path_consistency",
+      "club_speed_at_impact",
+      "compensation_severity",
+      "course_type_encoded",
+      "dominant_hand_encoded",
+      "early_cast_flag",
+      "early_extension_flag",
+      "elevation_m",
+      "env_difficulty_index",
+      "experience_engrainment",
+      "fitness_capability",
+      "fitness_level",
+      "gender_encoded",
+      "green_speed_stimp",
+      "height_m",
+      "hour_of_day",
+      "humidity_pct",
+      "kinematic_sequence_confidence",
+      "kinematic_sequence_score",
+      "lag_angle_impact",
+      "lag_angle_mid_downswing",
+      "lag_confidence",
+      "links_course_flag",
+      "normalized_distance_factor",
+      "over_top_flag",
+      "physical_profile_score",
+      "release_efficiency",
+      "reverse_pivot_flag",
+      "seq_consistency",
+      "seq_trend",
+      "session_fatigue",
+      "speed_trend",
+      "speed_variance_recent",
+      "sway_flag",
+      "swing_dominant_frequency",
+      "swing_tempo_ratio",
+      "temperature_c",
+      "temperature_efficiency",
+      "tempo_confidence",
+      "tempo_sequence_alignment",
+      "time_to_peak_speed",
+      "weight_transfer_confidence",
+      "weight_transfer_timing_ms",
+      "weighted_quality_score",
+      "wind_crosswind_component",
+      "wind_direction_deg",
+      "wind_headwind_component",
+      "wind_speed_mph",
+      "xfactor_confidence",
+      "xfactor_degrees",
+      "xfactor_max_ts",
+      "xfactor_rate_of_change",
+      "xfactor_timing",
+      "years_experience"
+    ]
+  },
+  "model_results": {
+    "linear_regression": {
+      "model": "Linear Regression",
+      "target": "ball_speed_mph",
+      "r2_test": 0.8486075310066256,
+      "rmse_test": 5.194902800003332,
+      "features_used": 58
+    },
+    "decision_tree": {
+      "model": "Decision Tree",
+      "target": "swing_quality_class",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "features_used": 58
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "target": "carry_distance_yards",
+      "r2_test": 0.8287876654486448,
+      "rmse_test": 9.22159396603831,
+      "features_used": 58,
+      "top_features": [
+        {
+          "feature": "xfactor_degrees",
+          "importance": 0.3966531654371205
+        },
+        {
+          "feature": "kinematic_sequence_score",
+          "importance": 0.1810403894238168
+        },
+        {
+          "feature": "lag_confidence",
+          "importance": 0.08319247549821344
+        },
+        {
+          "feature": "tempo_confidence",
+          "importance": 0.05100026031646903
+        },
+        {
+          "feature": "xfactor_confidence",
+          "importance": 0.04944166365544897
+        }
+      ]
+    },
+    "xgboost": {
+      "model": "XGBoost + SHAP",
+      "target": "injury_risk_score",
+      "r2_test": 0.9609296947558386,
+      "rmse_test": 0.05211413876904593,
+      "features_used": 58
+    },
+    "svm": {
+      "model": "SVM",
+      "target": "efficient_swing",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "auc_roc": 1.0,
+      "features_used": 58
+    }
+  },
+  "status": "PRODUCTION_READY"
+}

@@ -1,0 +1,7 @@
+Golfer ID: 1 | Injury Risk: 0.00 (LOW)
+──────────────────────────────────────────────────
+  sequence_efficiency_index          : -0.119  ↓ (reduces risk)
+  reverse_pivot_severity             : -0.033  ↓ (reduces risk)
+  sway_severity                      : -0.022  ↓ (reduces risk)
+  early_extension_severity           : -0.017  ↓ (reduces risk)
+  early_cast_severity                : -0.009  ↓ (reduces risk)

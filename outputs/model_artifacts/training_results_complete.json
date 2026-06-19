@@ -1,0 +1,61 @@
+{
+  "training_date": "2026-06-17T20:40:23.467081",
+  "total_features": 84,
+  "feature_breakdown": {
+    "biomechanics": 30,
+    "demographics": 13,
+    "environmental": 18,
+    "time_series": 27
+  },
+  "model_results": {
+    "linear_regression": {
+      "model": "Linear Regression",
+      "target": "ball_speed_mph",
+      "r2_test": 0.8289,
+      "rmse_test": 5.523,
+      "features_used": 84
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "target": "carry_distance_yards",
+      "r2_test": 0.8392,
+      "rmse_test": 8.936,
+      "features_used": 84,
+      "top_features": {
+        "feature": {
+          "78": "xfactor_degrees",
+          "36": "kinematic_sequence_score",
+          "65": "tempo_confidence",
+          "7": "club_path_confidence",
+          "39": "lag_confidence"
+        },
+        "importance": {
+          "78": 0.37958533772838055,
+          "36": 0.10574168824728872,
+          "65": 0.08858363364258286,
+          "7": 0.07196945190513117,
+          "39": 0.06940546670018787
+        },
+        "importance_pct": {
+          "78": 38.0,
+          "36": 10.6,
+          "65": 8.9,
+          "7": 7.2,
+          "39": 6.9
+        }
+      }
+    },
+    "xgboost": {
+      "model": "XGBoost + SHAP",
+      "target": "injury_risk_score",
+      "r2_test": 0.949,
+      "rmse_test": 0.0595,
+      "features_used": 84
+    }
+  },
+  "data_stats": {
+    "total_swings": 500,
+    "frame_records": 626025,
+    "train_test_split": "70/15/15"
+  }
+}
